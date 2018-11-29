@@ -1,12 +1,12 @@
 <template>
   <FlexboxLayout justifyContent="space-between">
-    <Star 
+    <Star
       v-for="index in 5"
-      :size="size"
-      :fillColor="fillColor"
-      :emptyColor="emptyColor"
+      v-bind="starStyles"
       :value="getStarValue(index)"
-      :key="index"/>
+      :key="index"
+      @tap="emitRating"
+    />
   </FlexboxLayout>
 </template>
 
@@ -23,7 +23,7 @@ export default {
       value: 0
     },
     size: {
-      type: Number,
+      type: [String, Number],
       required: false,
       default: 75
     },
@@ -36,21 +36,35 @@ export default {
       type: String,
       required: false,
       default: "#ABABAB"
-    },
+    }
   },
 
   components: {
     Star
   },
 
+  computed: {
+    starStyles() {
+      return {
+        size: this.size,
+        fillColor: this.fillColor,
+        emptyColor: this.emptyColor
+      }
+    }
+  },
+
   methods: {
     getStarValue(starIndex) {
-      return starIndex <= this.value ? 1 : starIndex - this.value < 1 ? this.value % 1 : 0;
+      return starIndex <= this.value
+        ? 1
+        : starIndex - this.value < 1
+        ? this.value % 1
+        : 0;
+    },
+
+    emitRating(value) {
+      this.$emit("ratingSelected", value);
     }
   }
-}
+};
 </script>
-
-<style>
-
-</style>

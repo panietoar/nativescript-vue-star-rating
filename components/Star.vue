@@ -1,7 +1,5 @@
 <template>
-  <Button 
-    class="star"
-    :style="starStyle"></Button>
+  <Button class="star" :style="starStyle" @tap="emitRating"></Button>
 </template>
 
 <script>
@@ -10,7 +8,7 @@ export default {
 
   props: {
     size: {
-      type: Number,
+      type: [String, Number],
       required: false,
       default: 75
     },
@@ -43,7 +41,12 @@ export default {
     percentage() {
       return `${this.value * 100}%`;
     }
+  },
 
+  methods: {
+    emitRating() {
+      this.$emit("tap", this.$vnode.key);
+    }
   }
 };
 </script>
