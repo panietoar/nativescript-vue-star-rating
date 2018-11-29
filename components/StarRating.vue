@@ -3,7 +3,6 @@
     <Star 
       v-for="index in 5"
       :size="size"
-      :borderColor="borderColor"
       :fillColor="fillColor"
       :emptyColor="emptyColor"
       :value="getStarValue(index)"
@@ -28,11 +27,6 @@ export default {
       required: false,
       default: 75
     },
-    borderColor: {
-      type: String,
-      required: false,
-      default: "#000"
-    },
     fillColor: {
       type: String,
       required: false,
@@ -51,7 +45,7 @@ export default {
 
   methods: {
     getStarValue(starIndex) {
-      return starIndex <= this.value ? 1 : starIndex - this.value < 1 ? 1 : 0;
+      return starIndex <= this.value ? 1 : starIndex - this.value < 1 ? this.value % 1 : 0;
     }
   }
 }

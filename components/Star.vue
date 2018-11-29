@@ -14,11 +14,6 @@ export default {
       required: false,
       default: 75
     },
-    borderColor: {
-      type: String,
-      required: false,
-      default: "#000"
-    },
     fillColor: {
       type: String,
       required: false,
@@ -41,7 +36,6 @@ export default {
       return {
         width: `${this.size}px`,
         height: `${this.size}px`,
-        border: `border: 1px solid ${this.borderColor}`,
         background: `linear-gradient(90deg, ${this.fillColor} ${this.percentage}, ${this.emptyColor} ${this.percentage})`
       };
     },
