@@ -1,0 +1,26 @@
+{
+  "name": "nativescript-vue-star-rating",
+  "version": "0.0.1",
+  "description": "A Star rating UI component for nativescript vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panietoar/nativescript-vue-star-rating.git"
+  },
+  "keywords": [
+    "nativescript",
+    "vue",
+    "nativescript-vue",
+    "star",
+    "ratings"
+  ],
+  "author": "Pablo nieto (panietoar@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/panietoar/nativescript-vue-star-rating/issues"
+  },
+  "homepage": "https://github.com/panietoar/nativescript-vue-star-rating#readme"
+}
