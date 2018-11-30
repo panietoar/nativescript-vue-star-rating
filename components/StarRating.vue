@@ -36,6 +36,11 @@ export default {
       type: String,
       required: false,
       default: "#ABABAB"
+    },
+    outlineColor: {
+      type: String,
+      required: false,
+      default: "#000"
     }
   },
 
@@ -48,8 +53,9 @@ export default {
       return {
         size: this.size,
         fillColor: this.fillColor,
-        emptyColor: this.emptyColor
-      }
+        emptyColor: this.emptyColor,
+        outlineColor: this.outlineColor
+      };
     }
   },
 

@@ -38,10 +38,11 @@ Use in template:
 
 | Prop             | Type            | Description                                        | Default Value  |
 |:----------------:|:---------------:| -------------------------------------------------- | -------------- |
-| **value**        | Number          | The rating value                                   |  1             |
+| **value**        | Number          | The rating value  | true                           |  1             |
 | **size**         | String, Number  | Size in pixels of width and height of the star     | 75             |
 | **fillColor**    | String          | CSS color for the filled stars                     | <span style="color:#FFEB0A">'#FFEB0A'</span>      |
 | **emptyColor**   | String          | CSS color for the empty stars                      | <span style="color:#ABABAB">'#ABABAB'</span>      |
+| **outlineColor** | String          | CSS color for the star outline                     | <span style="color:#000">'#000'</span>            |
 
 ## Events
 
@@ -52,4 +53,8 @@ Use in template:
 If you want to use the component as display only, just don't add an event listener for this event.
 
 ## Caveats
-Since clip-path is used to draw the stars, there is no current way for the stars to have borders. So have in mind the background color before setting up the stars colors.
+Star outline is a work in progress, you can customize the color but the outline width is still missing.
+
+## Demo
+A demo can be seen with the playground app and scanning this QR:
+![Playground](https://raw.githubusercontent.com/panietoar/nativescript-vue-star-rating/master/docs/playground.png)

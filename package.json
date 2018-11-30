@@ -1,6 +1,6 @@
 {
   "name": "nativescript-vue-star-rating",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Star rating UI component for nativescript vue",
   "main": "index.js",
   "scripts": {

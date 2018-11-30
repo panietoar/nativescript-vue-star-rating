@@ -1,5 +1,7 @@
 <template>
-  <Button class="star" :style="starStyle" @tap="emitRating"></Button>
+  <StackLayout class="outline" :style="outlineStyle">
+    <Button class="star" :style="starStyle" @tap="emitRating"></Button>
+  </StackLayout>
 </template>
 
 <script>
@@ -26,6 +28,11 @@ export default {
       type: Number,
       required: false,
       default: 1
+    },
+    outlineColor: {
+      type: String,
+      required: false,
+      default: "#000"
     }
   },
 
@@ -34,7 +41,15 @@ export default {
       return {
         width: `${this.size}px`,
         height: `${this.size}px`,
-        background: `linear-gradient(90deg, ${this.fillColor} ${this.percentage}, ${this.emptyColor} ${this.percentage})`
+        background: `linear-gradient(90deg, ${this.fillColor} ${
+          this.percentage
+        }, ${this.emptyColor} ${this.percentage})`
+      };
+    },
+
+    outlineStyle() {
+      return {
+        backgroundColor: this.outlineColor
       };
     },
 
@@ -52,7 +67,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.star {
+.star,
+.outline {
   clip-path: polygon(
     50% 0%,
     61% 35%,
