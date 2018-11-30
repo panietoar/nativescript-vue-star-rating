@@ -8,6 +8,10 @@ Features:
 * CSS only UI, no images used.
 * Tap a star to rate from 1 to 5.
 
+## Screenshots
+
+![Screenshot 1](https://raw.githubusercontent.com/panietoar/nativescript-vue-star-rating/master/docs/screenshot-1.png)
+
 ## Installation
 
 ```bash
