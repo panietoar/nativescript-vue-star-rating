@@ -38,7 +38,7 @@ Use in template:
 
 | Prop             | Type            | Description                                        | Default Value  |
 |:----------------:|:---------------:| -------------------------------------------------- | -------------- |
-| **value**        | Number          | The rating value  | true                           |  1             |
+| **value**        | Number          | The rating value                                   |  1             |
 | **size**         | String, Number  | Size in pixels of width and height of the star     | 75             |
 | **fillColor**    | String          | CSS color for the filled stars                     | <span style="color:#FFEB0A">'#FFEB0A'</span>      |
 | **emptyColor**   | String          | CSS color for the empty stars                      | <span style="color:#ABABAB">'#ABABAB'</span>      |
