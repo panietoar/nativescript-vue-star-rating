@@ -81,5 +81,6 @@ export default {
     0% 35%,
     39% 35%
   );
+  z-index: 0;
 }
 </style>
