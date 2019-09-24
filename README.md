@@ -54,7 +54,3 @@ If you want to use the component as display only, just don't add an event listen
 
 ## Caveats
 Star outline is a work in progress, you can customize the color but the outline width is still missing.
-
-## Demo
-A demo can be seen with the playground app and scanning this QR:
-![Playground](https://raw.githubusercontent.com/panietoar/nativescript-vue-star-rating/master/docs/playground.png)
