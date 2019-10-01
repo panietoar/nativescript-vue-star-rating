@@ -1,1 +1,14 @@
 node_modules
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# VSCode project files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
