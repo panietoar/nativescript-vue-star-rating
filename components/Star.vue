@@ -12,7 +12,7 @@ export default {
     size: {
       type: [String, Number],
       required: false,
-      default: 15
+      default: 30
     },
     fillColor: {
       type: String,
