@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/panietoar/nativescript-vue-star-rating.git"
+    "url": "git+https://github.com/Rho-bur/nativescript-vue-star-rating.git"
   },
   "keywords": [
     "nativescript",
@@ -19,11 +19,17 @@
   ],
   "author": "Pablo nieto (panietoar@gmail.com)",
   "license": "MIT",
+  "nativescript": {
+    "platforms": {
+      "android": "6.5.3",
+      "ios": "6.5.2"
+    }
+  },
   "peerDependencies": {
     "tns-core-modules": "*"
   },
   "bugs": {
-    "url": "https://github.com/panietoar/nativescript-vue-star-rating/issues"
+    "url": "https://github.com/Rho-bur/nativescript-vue-star-rating/issues"
   },
-  "homepage": "https://github.com/panietoar/nativescript-vue-star-rating#readme"
+  "homepage": "https://github.com/Rho-bur/nativescript-vue-star-rating/blob/master/README.md"
 }

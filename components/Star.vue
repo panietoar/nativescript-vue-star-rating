@@ -39,8 +39,8 @@ export default {
   computed: {
     starStyle() {
       return {
-        width: `${this.size}px`,
-        height: `${this.size}px`,
+        width: `${this.size}`,
+        height: `${this.size}`,
         background: `linear-gradient(90deg, ${this.fillColor} ${
           this.percentage
         }, ${this.emptyColor} ${this.percentage})`
