@@ -12,7 +12,7 @@ export default {
     size: {
       type: [String, Number],
       required: false,
-      default: 75
+      default: 30
     },
     fillColor: {
       type: String,
@@ -39,8 +39,8 @@ export default {
   computed: {
     starStyle() {
       return {
-        width: `${this.size}px`,
-        height: `${this.size}px`,
+        width: `${this.size}`,
+        height: `${this.size}`,
         background: `linear-gradient(90deg, ${this.fillColor} ${
           this.percentage
         }, ${this.emptyColor} ${this.percentage})`

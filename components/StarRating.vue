@@ -25,7 +25,7 @@ export default {
     size: {
       type: [String, Number],
       required: false,
-      default: 75
+      default: 30
     },
     fillColor: {
       type: String,
