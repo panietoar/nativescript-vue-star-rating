@@ -31,6 +31,14 @@ Use in template:
 ...  
 <StarRating :value="rating" size="90" />  
 ...  
+```
+
+I found that in {NS}6+ the size attribute either doesn't work or it deforms the stars.
+Therefore a solution is to use:
+
+```xml
+<StarRating :value="rating" scaleX="0.8" scaleY="0.8" />
+
 ```   
 
 ## Properties  
@@ -38,11 +46,11 @@ Use in template:
 | Prop             | Type            | Description                                        | Default Value  |  
 |:----------------:|:---------------:| -------------------------------------------------- | -------------- |  
 | **value** | Number          | The rating value                                   |  1             |  
-| **size** | String, Number  | Size in pixels of width and height of the star     | 75             |  
+| **size** | String, Number  | Size in DIP* of width and height of the star     | 75             |  
 | **fillColor** | String          | CSS color for the filled stars                     | <span style="color:#FFEB0A">'#FFEB0A'</span>      |  
 | **emptyColor** | String          | CSS color for the empty stars                      | <span style="color:#ABABAB">'#ABABAB'</span>      |  
 | **outlineColor** | String          | CSS color for the star outline                     | <span style="color:#000">'#000'</span>            |  
-  
+* DIP - device independent pixels  
 ## Events  
   
 | Event              | Returns | Description                                    |  
